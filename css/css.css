@@ -1,0 +1,242 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5; 
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Divisoes 
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    box-sizing: border-box;
+    padding: 75px 55px 73px;
+    background-color: rgb(241, 63, 63);
+    box-sizing: border-box;
+
+}
+
+main{
+    background-color: #2b2a2a;
+    width: 65%;
+    min-height: 231%;
+    padding: 75px 55px 73px;
+    margin-right: 35%;
+    box-sizing: border-box;
+}
+
+h3{
+    color: white;
+}
+
+a{
+    color: black;
+}
+
+i{
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Perfil
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+#perfil{
+    width: 30%;
+    height: 530px;
+    position: fixed;
+    top: 26%;
+    bottom: 30px;
+}
+
+#perfil img{
+    width: 250px;
+    border-radius: 90px;
+}
+
+#perfil-img{
+    float: left;
+}
+
+.text{
+    position: absolute;
+    top: 55%;
+    margin-left: 15px;
+}
+
+#social-view{
+    width: 17px;
+    display: block;
+    font-size: 17px;
+    float: left;
+    margin-top: 65px;
+    margin-left: -10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Imagens ver
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+.expand{
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+}
+.img-1{
+    display: inline-block;
+    opacity: 100%;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.img-1:hover{
+    opacity: 60%;
+}
+
+.row{
+    height: 238px;
+    overflow: auto;
+    width: 749px;
+    margin-top: 10px;
+}
+
+.img-gods{
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Video ver
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+.video-view{
+    width: 750px;
+    height: 770px;
+}
+
+video{
+    margin-left: 3px;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Fix Section
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+#fix-view{
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    transform: translate(7%,-50%);
+}
+#fix-view2{
+    top: 139%;
+    right: 50%;
+    position: absolute;
+    transform: translate(7%,-50%);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Animacao Imgagem
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img[data-src] {
+    opacity: 0;
+    transform: scale(0);
+}
+
+img[src]{
+    opacity: 1;
+    transform: scale(1);
+    transition: .7s ease-in-out;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Footer
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    background-color: #4b4b4b;
+    height: 70px;
+    margin-top: -20px;
+}
+
+footer p{
+    color: #706f6f;
+    padding-top: 22px;
+    margin-left: 30%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Responsividade do projeto
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1800px) { /* 1366x768 */
+    #fix-view{
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        transform: translate(7%,-50%);
+    }
+    #fix-view2{
+        top: 149%;
+        right: 50%;
+        position: absolute;
+        transform: translate(7%,-50%);
+    }
+}
+
+@media only screen and (max-width: 1680px) { /* 1366x768 */
+    #fix-view{
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        transform: translate(13%,-50%);
+    }
+    #fix-view2{
+        top: 159%;
+        right: 50%;
+        position: absolute;
+        transform: translate(13%,-50%);
+    }
+}
+
+@media only screen and (max-width: 1280px) { /* 1024x768 */
+    #fix-view{
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        transform: translate(21%,-47%);
+    }
+    #fix-view2{
+        top: 179%;
+        right: 50%;
+        position: absolute;
+        transform: translate(21%,-47%);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+    Barra de rolagem
+--------------------------------------------------------------------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+}
